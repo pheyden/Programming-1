@@ -29,7 +29,49 @@ int main()
     max5 = max(max3, max4);
     cout << "\n\nLargest number is " << max5;
 
-    //Part 3 gives the cumulative totals.
+    //Part 3 find total even and odd numbers.
+    int evenNum = 0;
+    int oddNum = 0;
+    if (num1 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    if (num2 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    if (num3 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    if (num4 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    if (num5 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    if (num6 % 2 == 0) {
+        evenNum += 1;
+    }
+    else {
+        oddNum += 1;
+    }
+    cout << "\n\nEven numbers " << evenNum;
+    cout << "\n\nOdd numbers " << oddNum;
+
+    //Part 4 gives the cumulative totals.
     int total;
     cout << "\n\nCumulative totals are ";
     total = num1;
@@ -45,7 +87,7 @@ int main()
     total += num6;
     cout << total << " ";
 
-    //Part 4 looks for adjacent duplicates.
+    //Part 5 looks for adjacent duplicates.
     //It also makes sure that if the user were to enter something like "2 2 2" it would only print a single "2".
     cout << "\n\nAdjacent duplicates ";
     if (num1 == num2) {
